@@ -1,0 +1,14 @@
+:root {
+    --bg-color: #141519;
+    --rating-card-bg-color: #202731;
+    --rating-card-title-color: #fefefe;
+    --rating-card-description-color: #747a86;
+    --rating-button-normal-background: #262d37;
+    --rating-button-normal-text-color: #828b94;
+    --rating-button-hover-background-color: #fc7613;
+    --rating-button-hover-text-color: #ffe5cb;
+    --submit-button-normal-background:#ffe5cb;
+    --submit-button-normal-text-color:#fc7613;
+    --submit-button-focus-background:#fc7613;
+    --submit-button-focus-text-color:#ffe5cb;
+}
