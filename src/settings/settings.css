@@ -7,8 +7,8 @@
     --rating-button-normal-text-color: #828b94;
     --rating-button-hover-background-color: #fc7613;
     --rating-button-hover-text-color: #ffe5cb;
-    --submit-button-normal-background:#ffe5cb;
-    --submit-button-normal-text-color:#fc7613;
-    --submit-button-focus-background:#fc7613;
-    --submit-button-focus-text-color:#ffe5cb;
+    --submit-button-disabled-background: #262d37;
+    --submit-button-disabled-color:#828b94;
+    --submit-button-active-background:#fc7613;
+    --submit-button-active-text-color:#ffe5cb;
 }

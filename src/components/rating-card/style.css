@@ -47,17 +47,15 @@
     transition: 0.4s;
 }
 
-.rating-button:hover {
+.rating-button:hover, .rating-button-active {
     background-color: var(--rating-button-hover-background-color);
     color: var(--rating-button-hover-text-color);
 }
 
 .submit-button {
     width: 100%;
-    background: var(--submit-button-normal-background);
     border-radius: 15px;
     border: none;
-    color: var(--submit-button-normal-text-color);
     cursor: pointer;
     font-size: 1.4rem;
     font-weight: 500;
@@ -65,7 +63,13 @@
     transition: 0.4s;
 }
 
-.submit-button:focus {
-    background-color: var(--submit-button-focus-background);
-    color: var(--submit-button-focus-text-color);
+.submit-button-active {
+    background-color: var(--submit-button-active-background);
+    color: var(--submit-button-active-text-color);
+}
+
+.submit-button-disabled {
+    background: var(--submit-button-disabled-background);
+    color: var(--submit-button-disabled-color);
+    cursor: not-allowed;
 }

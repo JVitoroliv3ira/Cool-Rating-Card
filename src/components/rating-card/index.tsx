@@ -3,9 +3,9 @@ import starLogo from "../../assets/icon-star.svg";
 import "./style.css"
 
 const RatingCard = () => {
-    const ratings = [1, 2, 3, 4, 5];
     const [selectedValue, setSelectedValue] = useState<number>();
-    const handleSelectValue = (value: number) => setSelectedValue(value); 
+    const ratings = [1, 2, 3, 4, 5];
+    const handleRatingButtonClick = (value: number) => selectedValue === value ? setSelectedValue(undefined) : setSelectedValue(value); 
 
     return (
         <div className="rating-card">
@@ -18,11 +18,11 @@ const RatingCard = () => {
 
             <div className="rating-buttons-wrapper">
                 {ratings.map((rating: number) => (
-                    <button onClick={() => handleSelectValue(rating)} className="rating-button" key={rating}>{rating}</button>
+                    <button onClick={() => handleRatingButtonClick(rating)} className={`rating-button ${rating === selectedValue ? 'rating-button-active' : ''}`} key={rating}>{rating}</button>
                 ))}
             </div>
 
-            <button className="submit-button" disabled={selectedValue === undefined}>SUBMIT</button>
+            <button className={`submit-button ${selectedValue === undefined ? 'submit-button-disabled' : 'submit-button-active'}`} disabled={selectedValue === undefined}>SUBMIT</button>
         </div>
     );
 }
